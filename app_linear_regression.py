@@ -1,5 +1,5 @@
 import streamlit as st
-import Seaborn as sns
+import seaborn as sns
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
@@ -95,4 +95,5 @@ tip = model.predict(scaler.transform([[bill]]))[0]
 st.markdown(f'<div class="prediction-box">Predicted Tip: ${tip:.2f}</div>', unsafe_allow_html=True)
 
 st.markdown('</div>', unsafe_allow_html=True)
+
 
